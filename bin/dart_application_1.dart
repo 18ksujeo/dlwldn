@@ -106,7 +106,7 @@ class Game {
 
   void loadCharacterStats() {
     try {
-      final file = File('./characters.txt');
+      final file = File('characters.txt');
       final contents = file.readAsStringSync();
       final stats = contents.split(',');
 
@@ -133,7 +133,7 @@ class Game {
 
   void loadMonsterStats() {
     try {
-      final file = File('./monsters.txt');
+      final file = File('monsters.txt');
       final lines = file.readAsLinesSync();
 
       for (var line in lines) {
